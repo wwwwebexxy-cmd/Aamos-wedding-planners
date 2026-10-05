@@ -15,7 +15,29 @@ export default function BackToTop() {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      window.scrollTo({ top: 0 });
+      return;
+    }
+
+    const startY = window.scrollY;
+    const startTime = performance.now();
+    const duration = 1200;
+    const delay = 90;
+
+    const animate = (time: number) => {
+      const elapsed = Math.max(0, time - startTime - delay);
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 4);
+
+      window.scrollTo({ top: startY * (1 - easedProgress) });
+
+      if (progress < 1) {
+        window.requestAnimationFrame(animate);
+      }
+    };
+
+    window.requestAnimationFrame(animate);
   };
 
   return (
