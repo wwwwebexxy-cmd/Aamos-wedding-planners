@@ -41,7 +41,7 @@ export default function Home() {
           <div className={styles.heroCopy}>
             <span className={styles.eyebrow}>Aamos Wedding Planners</span>
             <h1 className={`${styles.display} ${styles.heroTitle}`}>
-              Thoughtful planning. <em>Beautifully yours.</em>
+              Elevating moments with grace.
             </h1>
             <p className={styles.heroText}>
               We create warm, elegant celebrations shaped around your story —
@@ -191,7 +191,7 @@ export default function Home() {
             <span className={styles.eyebrow}>Contact Aamos</span>
             <h2 className={styles.contactTitle}>Let&apos;s plan something beautiful.</h2>
             <p className={styles.contactLead}>
-              Find us in Panapilavu, Kerala, or open the map below to plan your visit.
+              Find us in ERUMELI, Kerala, or open the map below to plan your visit.
             </p>
           </div>
 
@@ -212,13 +212,13 @@ export default function Home() {
           <div className={styles.contactMapSection}>
             <div className={styles.contactMapIntro}>
               <p className={styles.eyebrow}>Find us</p>
-              <h3 className={styles.contactMapTitle}>Panapilavu</h3>
+              <h3 className={styles.contactMapTitle}>ERUMELI</h3>
               <p className={styles.contactMapCopy}>
-                Visit us in Panapilavu, Kerala, and let&apos;s begin planning your celebration together.
+                Visit us in ERUMELI, Kerala, and let&apos;s begin planning your celebration together.
               </p>
               <a
                 className={styles.contactMapLink}
-                href="https://share.google/g4tSWdEOArvBZjwZo"
+                href="https://maps.app.goo.gl/UBkZ5Eic6BT5xGGu5"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -228,8 +228,8 @@ export default function Home() {
 
             <div className={styles.contactMapFrame}>
               <iframe
-                title="Panapilavu on Google Maps"
-                src="https://www.google.com/maps?q=Panapilavu%2C%20Kerala%2C%20India&output=embed"
+                title="ERUMELI on Google Maps"
+                src="https://www.google.com/maps?q=ERUMELI%2C%20Kerala%2C%20India&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
