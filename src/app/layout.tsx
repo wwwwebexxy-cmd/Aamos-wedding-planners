@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/layout/BackToTop";
+import FloatingCall from "@/components/layout/FloatingCall";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import LoadingScreen from "@/components/LoadingScreen";
 import { services } from "@/data/services";
@@ -169,6 +170,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <FloatingCall />
         <FloatingWhatsApp />
         <BackToTop />
       </body>
