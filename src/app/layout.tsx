@@ -5,6 +5,7 @@ import BackToTop from "@/components/layout/BackToTop";
 import FloatingCall from "@/components/layout/FloatingCall";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import LoadingScreen from "@/components/LoadingScreen";
+import SmoothScroll from "@/components/SmoothScroll";
 import { services } from "@/data/services";
 import "./globals.css";
 
@@ -167,6 +168,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen antialiased">
         <LoadingScreen />
+        <SmoothScroll />
         <Header />
         <main>{children}</main>
         <Footer />
