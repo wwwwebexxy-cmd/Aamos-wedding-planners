@@ -37,6 +37,12 @@ export default function Footer() {
               <span>Instagram</span>
             </a>
           </div>
+          <div className="site-footer__contact" aria-label="Aamos contact details">
+            <a href="mailto:aamosweddingplanners@gmail.com">
+              aamosweddingplanners@gmail.com
+            </a>
+            <a href="tel:+916235314140">+916235314140</a>
+          </div>
         </div>
 
         <div className="site-footer__section">
